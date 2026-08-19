@@ -1,0 +1,2005 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.outline * {
+  outline: 1px solid #000000;
+}
+.outline-2 * {
+  outline: 1px solid #ffffff;
+}
+
+/* Color Variables matching design */
+
+/* ===========Fonts============ */
+.plus-jakarta-sans-400 {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.plus-jakarta-sans-500 {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+}
+
+.plus-jakarta-sans-600 {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+}
+.plus-jakarta-sans-700 {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+
+.poppins-600 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+}
+
+.rubik-400 {
+  font-family: "Rubik", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+.inter-400 {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+.inter-500 {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+}
+
+.schibsted-grotesk-600 {
+  font-family: "Schibsted Grotesk", sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+}
+
+.bebas-neue {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 400 !important;
+}
+/* ===========Fonts============ */
+
+/*================================Top Header====================================== */
+
+.top-bar {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.navbar-logo-img {
+  height: clamp(26px, 2.2vw, 38px);
+  width: clamp(11.25rem, 8.9643rem + 11.4286vw, 19.25rem);
+  object-fit: contain;
+  display: block;
+}
+.navbar-logo-offcanvas-header-img {
+  /* height: clamp(26px, 2.2vw, 38px); */
+  width: clamp(11.25rem, 8.9643rem + 11.4286vw, 19.25rem);
+  /* object-fit: contain; */
+  display: block;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(13, 75, 101, 1);
+}
+.top-bar h6 {
+  color: rgba(38, 37, 37, 1);
+  font-size: 16px;
+}
+
+.top-bar .phone-number a {
+  color: rgba(38, 37, 37, 1);
+  font-size: 14px;
+}
+
+.top-bar .email-address a {
+  color: rgba(38, 37, 37, 1);
+  font-size: 14px;
+}
+
+.top-bar .social-media .icon-circle-2 {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(228, 228, 228, 1); /* Light subtle border matching Figma */
+  text-decoration: none;
+}
+
+.social-media .icon-circle-2:hover {
+  background-color: #f8f9fa;
+  border-color: #015198;
+}
+
+/*================================Main Navbar====================================== */
+.main-navbar {
+  background-color: rgba(1, 81, 152, 1);
+  border: 10px solid rgba(255, 255, 255, 1);
+}
+
+.main-navbar .nav-item .nav-link {
+  font-family: "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.main-navbar .nav-item .nav-link.active {
+  font-weight: 600;
+  color: #ffffff !important;
+}
+
+.offcanvas-body {
+  background-color: rgba(1, 81, 152, 1);
+}
+
+.offcanvas-body .phone-number h6 {
+  color: rgba(38, 37, 37, 1);
+  font-size: 16px;
+}
+
+.offcanvas-body .phone-number a {
+  color: rgba(38, 37, 37, 1);
+  font-size: 14px;
+}
+
+.offcanvas-body .email-address h6 {
+  color: rgba(38, 37, 37, 1);
+  font-size: 16px;
+}
+
+.offcanvas-body .email-address a {
+  color: rgba(38, 37, 37, 1);
+  font-size: 14px;
+}
+
+.offcanvas-body .icon-circle {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.offcanvas-body .social-media a {
+  background-color: rgb(255, 255, 255);
+}
+
+.offcanvas-body .social-media .icon-circle-2 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(228, 228, 228, 1);
+  padding: 0;
+  text-decoration: none;
+}
+
+/* Offcanvas Visibility Fix (Mobile menu front par lane ke liye) */
+.offcanvas {
+  z-index: 1055 !important;
+}
+.offcanvas-backdrop {
+  z-index: 1050 !important;
+}
+
+/*================================Navbar and Hero Section====================================== */
+.hero-wrapper {
+  position: relative;
+  background-color: #eeeeee;
+}
+
+.hero-card {
+  border-radius: 30px !important;
+  /* position: relative; */
+}
+
+.hero-bg-img {
+  display: block;
+  z-index: 0;
+  width: 100%;
+  height: auto;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 46, 74, 1) 0%,
+    rgba(0, 46, 74, 0.85) 45%,
+    rgba(0, 46, 74, 0) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+@media (min-width: 992px) {
+  .floating-navbar {
+    position: absolute !important;
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    padding-top: 0 !important;
+    z-index: 10 !important; /* High Z-index desktop par hero card ke upar rakhega */
+  }
+
+  .hero-section {
+    padding-top: 40px; /* Navbar padding alignment */
+  }
+}
+
+.hero-section-content h5 {
+  font-size: clamp(14px, 1.5vw, 22px);
+  /* line-height: 1.3; */
+}
+
+.hero-section-content h1 {
+  font-size: clamp(2.5rem, 1.9643rem + 2.6786vw, 4.375rem);
+  line-height: 1.2;
+}
+.hero-section-content p {
+  font-size: clamp(13px, 1.2vw, 16px);
+  line-height: 26px;
+}
+
+.cta-section .get-a-quote-btn {
+  font-size: 12px;
+  line-height: 1.5;
+  background-color: rgba(108, 188, 69, 1) !important;
+  border-color: rgba(108, 188, 69, 1) !important;
+  color: #ffffff !important;
+  border-radius: 200px !important;
+  /* padding: 12px 20px !important; */
+}
+
+.cta-section .get-a-quote-btn:hover {
+  background-color: rgba(108, 188, 69, 0.5) !important;
+  border-color: rgba(108, 188, 69, 1) !important;
+}
+
+.cta-section .call-now {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.badges-section {
+  color: white;
+}
+
+.badges-section .badge-number {
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+.badges-section .badge-label {
+  font-size: 12px;
+  white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .border-end-custom {
+    border-right: 1px solid rgba(255, 255, 255, 0.5) !important;
+  }
+}
+/*============================= Navbar and Hero Section End =============================== */
+
+/*================================ About Section ====================================== */
+.about-section {
+  background-color: #eeeeee;
+}
+
+.about-top-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.dark-card {
+  background-color: #002e4a;
+  border-radius: 20px !important;
+}
+
+.about-img-box {
+  border-radius: 20px;
+  /* min-height: 300px; */
+}
+
+.grid-container > * {
+  /* background-color: rgba(0, 150, 255, 0.1); */
+  outline: 2px dashed #0095ff;
+}
+
+/* Desktop Grid Layout (lg - 992px and up) */
+@media (min-width: 992px) {
+  .about-top-grid {
+    display: grid;
+    grid-template-columns: repeat(34, 1fr); /* 8 ki jagah 32 */
+    grid-template-rows: auto 1fr;
+    gap: 20px 0;
+    align-items: stretch;
+  }
+
+  .about-header-block {
+    grid-column: 1 / span 16; /* pehle span 4 tha (8-col) → ab 16 (32-col), same 50% width */
+    grid-row: 1;
+    z-index: 2;
+  }
+
+  .dark-card {
+    grid-column: 1 / span 17; /* 6.5 columns ka exact equivalent */
+    grid-row: 2;
+    /* align-self: end; */
+    position: relative;
+    z-index: 2;
+  }
+
+  .about-img-box {
+    grid-column: 19 / span 19; /* 4.25 columns ka exact equivalent, column 5 (32-col mein 17) se start */
+    grid-row: 1 / span 3;
+    height: 100%;
+    min-height: 100%;
+    z-index: 1;
+  }
+}
+
+.img-desktop {
+  display: none;
+}
+
+.img-mobile {
+  display: block;
+}
+
+@media (min-width: 1145px) {
+  .dark-card {
+    grid-column: 1 / span 19; /* 6.5 columns ka exact equivalent */
+    grid-row: 2;
+    /* align-self: end; */
+    position: relative;
+    z-index: 2;
+  }
+
+  .img-desktop {
+    display: block;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+}
+
+.about-header-block .sub-tag {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(108, 188, 69, 1);
+  letter-spacing: 2%;
+}
+
+.about-header-block .about-section-heading {
+  font-size: 40px;
+  color: rgba(38, 37, 37, 1);
+  letter-spacing: -1%;
+  text-wrap: balance;
+}
+
+.about-header-block .about-section-heading span {
+  color: rgba(0, 141, 198, 1);
+}
+
+.dark-card p {
+  font-size: 14px;
+  /* line-height: 26px; */
+  color: #ffffff;
+}
+
+.about-points-list .point-item {
+  font-size: 12px;
+  color: rgba(38, 37, 37, 1);
+}
+
+.about-points-list .bullet-dot {
+  color: rgba(0, 141, 198, 1);
+  font-size: 20px;
+}
+
+.about-section-cta .get-a-quote-btn {
+  font-size: 12px;
+  line-height: 2.5;
+  background-color: rgba(108, 188, 69, 1) !important;
+  border-color: rgba(108, 188, 69, 1) !important;
+  color: #ffffff !important;
+  border-radius: 200px !important;
+  /* padding: 12px 20px !important; */
+}
+
+.about-section-cta .get-a-quote-btn:hover {
+  background-color: rgb(51, 105, 24) !important;
+  border-color: rgb(51, 105, 24) !important;
+}
+
+.about-section-cta .view-our-services-btn {
+  font-size: 12px;
+  line-height: 2.5;
+  border: 1px solid rgba(108, 188, 69, 1) !important;
+  border-radius: 200px !important;
+  /* padding: 12px 20px !important; */
+}
+
+.about-section-cta .view-our-services-btn:hover {
+  background-color: rgb(51, 105, 24) !important;
+  border-color: rgb(51, 105, 24) !important;
+  color: white !important;
+}
+
+/*================================ About Section End ====================================== */
+
+/*================================ Services Section ====================================== */
+/* Outer Wrapper Background (Light Grey) */
+.services-section-wrapper {
+  background-color: #eeeeee;
+}
+
+/* Main Box (Container Anchor) */
+.service-section {
+  position: relative;
+  background-color: rgba(0, 46, 74);
+  min-height: 500px;
+  border-radius: 20px;
+}
+
+/* Layer 1: Background Image */
+.service-bg-img {
+  /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; */
+  z-index: 0; /* Base Layer */
+}
+
+/* Layer 2: Color Overlay (Semi-Transparent Dark Blue) */
+.service-section-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 46, 74); */
+  z-index: 1; /* Middle Layer */
+  pointer-events: none; /* Mouse clicks bypass to elements behind if needed */
+}
+
+/* Layer 3: Actual Text & Interactive Cards */
+.service-content {
+  position: relative;
+  z-index: 3; /* Top Layer (Clickable & Visible) */
+}
+
+.service-content .sub-tag {
+  font-size: 18px;
+  color: rgba(0, 141, 198, 1);
+}
+
+.service-section-heading {
+  font-size: 52px;
+}
+.service-section-heading span {
+  color: rgba(108, 188, 69, 1);
+}
+
+/* Custom Cyan Background Cards */
+.custom-cyan-item,
+.custom-cyan-item .accordion-button {
+  background-color: #00a4d6 !important;
+}
+
+/* Remove Bootstrap Default Chevron Arrow */
+.custom-services-accordion .accordion-button::after {
+  display: none !important;
+  border-radius: 10px;
+}
+
+/* Accordion Active/Focus Box Shadow Reset */
+.custom-services-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Drawer Inner Image Styling */
+/* .drawer-img-box {
+    min-height: 100px;
+} */
+
+.drawer-img-box img {
+  border-radius: 16px;
+  /* min-height: 50px; */
+}
+
+.accordion-header h1 {
+  font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+}
+
+.accordion-icon {
+  color: rgba(34, 174, 218, 1);
+  font-size: clamp(1.5625rem, 1.2946rem + 1.3393vw, 2.5rem);
+}
+
+.accordion-content h1 {
+  font-size: clamp(1.5rem, 1.1786rem + 1.6071vw, 2.625rem);
+}
+
+.accordion-content p {
+  font-size: clamp(0.8125rem, 0.7589rem + 0.2679vw, 1rem);
+  color: rgba(127, 127, 121, 1);
+}
+
+.accordion-content .get-a-quote-btn {
+  font-size: 12px;
+  line-height: 2.5;
+  background-color: rgba(108, 188, 69, 1) !important;
+  border-color: rgba(108, 188, 69, 1) !important;
+  color: #ffffff !important;
+  border-radius: 200px !important;
+}
+
+.accordion-contentn .get-a-quote-btn:hover {
+  background-color: rgba(108, 188, 69, 0.5) !important;
+  border-color: rgba(108, 188, 69, 1) !important;
+}
+
+.about-section-cta .view-our-services-btn:hover {
+  background-color: rgb(51, 105, 24) !important;
+  border-color: rgb(51, 105, 24) !important;
+  color: white !important;
+}
+
+/* Custom Accordion Header Background & Text Color */
+.custom-services-accordion .accordion-button-2 {
+  background-color: rgba(34, 174, 218, 1) !important;
+  color: #ffffff !important;
+}
+
+/* Jab Accordion Collapsed (Closed) Ho Tab Bhi Colors Same Rahein */
+.custom-services-accordion .accordion-button-2.collapsed {
+  background-color: rgba(34, 174, 218, 1) !important;
+  color: #ffffff !important;
+}
+
+/* Plus (+) Icon White Color */
+.custom-services-accordion .accordion-icon-2 {
+  color: #ffffff !important;
+}
+
+/* Accordion Item Border & Background Override */
+.custom-services-accordion .accordion-item-2 {
+  background-color: rgba(34, 174, 218, 1);
+  border: none;
+}
+
+/*================================ Services Section End ====================================== */
+
+/*================================ Working Section ====================================== */
+.working-section {
+  background-color: #eeeeee;
+}
+
+.working-section .sub-tag {
+  color: rgba(108, 188, 69, 1);
+  font-size: 18px;
+}
+
+.working-section-heading {
+  font-size: 57px;
+}
+
+.working-section-heading span {
+  color: rgba(0, 141, 198, 1);
+}
+
+.working-section-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+}
+
+.working-section-cards-wrapper .card {
+  border-radius: 20px !important;
+  height: 100%;
+}
+
+.step-img-box {
+  display: grid;
+  grid-template-areas: "overlay-stack";
+  border-radius: 16px;
+  border: none !important;
+}
+
+.step-img-box > * {
+  grid-area: overlay-stack;
+}
+
+.step-img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.step-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(6, 33, 55, 1) 100%
+  );
+  z-index: 1;
+}
+
+.step-content,
+.step-number {
+  z-index: 2;
+  color: rgba(255, 255, 255, 1);
+}
+
+.step-digit {
+  font-size: 40px;
+}
+
+.step-label {
+  font-size: 15px;
+}
+
+.step-title h3 {
+  font-size: 24px;
+}
+
+.working-section-cards-wrapper .card-text {
+  font-size: 13px;
+  /* letter-spacing: -0.04em; */
+  color: rgba(127, 127, 121, 1) !important;
+}
+
+.working-section .finance-option-btn {
+  font-size: 12px;
+  line-height: 2.5;
+  background-color: rgba(108, 188, 69, 1) !important;
+  border-color: rgba(108, 188, 69, 1) !important;
+  color: #ffffff !important;
+  border-radius: 200px !important;
+}
+
+.working-section .finance-option-btn:hover {
+  background-color: rgba(43, 90, 20, 1) !important;
+  border-color: rgba(108, 188, 69, 1) !important;
+}
+
+/*================================ Why Section ====================================== */
+.why-choose-section-wrapper {
+  background-color: #eeeeee;
+}
+
+/* Main Box (Container Anchor) */
+.why-choose-section {
+  position: relative;
+  background-color: rgba(0, 46, 74);
+  min-height: 500px;
+  border-radius: 20px;
+}
+
+.why-choose-bg-img {
+  z-index: 0;
+}
+
+.why-choose-section-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 46, 74); */
+  z-index: 1; /* Middle Layer */
+  pointer-events: none;
+}
+
+.why-choose-content {
+  position: relative;
+  z-index: 3;
+}
+
+.why-choose-custom-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 992px) {
+  .why-choose-custom-grid {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, auto);
+    gap: 16px;
+    grid-auto-flow: row dense;
+  }
+
+  .why-choose-heading-area {
+    grid-area: 1 / 1 / 4 / 7;
+  }
+
+  .feature-card-grid-section {
+    grid-area: 4 / 1 / 13 / 5;
+  }
+
+  .before-card-area {
+    grid-area: 3 / 5 / 13 / 7;
+  }
+
+  .after-card-area {
+    grid-area: 1 / 7 / 11 / 9;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .feature-card-grid-section.d-flex {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .before-card-area,
+  .after-card-area {
+    min-height: 250px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .feature-card-grid-section.d-flex {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .why-choose-custom-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .why-choose-heading-area,
+  .feature-card-grid-section {
+    grid-column: 1 / -1;
+  }
+
+  .before-card-area {
+    grid-column: 1;
+  }
+
+  .after-card-area {
+    grid-column: 2;
+  }
+
+  .before-card-area,
+  .after-card-area {
+    min-height: 220px; /* Tablet image height */
+  }
+}
+
+.why-choose-text p {
+  color: rgba(108, 188, 69, 1) !important;
+  font-size: 18px;
+}
+
+.why-choose-section-heading h2 {
+  font-size: clamp(1.875rem, 1.4821rem + 1.9643vw, 3.25rem);
+}
+
+.feature-card-wrapper {
+  position: relative;
+  z-index: 0;
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 100%;
+}
+
+.feature-number-box {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background-color: rgba(0, 46, 74, 1);
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  z-index: 5;
+}
+
+.feature-number-text {
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  background-color: rgba(34, 174, 218, 1);
+  border-radius: 12px;
+}
+
+.feature-card-body {
+  position: relative;
+  z-index: 3;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding-left: 40px !important;
+
+  min-height: 70px;
+  height: 100%;
+}
+
+.feature-title {
+  color: #0f172a;
+  font-size: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+}
+
+.feature-desc {
+  color: #82827c;
+  font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+}
+
+.before-after-grid-section {
+  display: flex;
+  gap: 16px;
+  height: 100%;
+  min-height: 400px;
+}
+
+.before-card-item,
+.after-card-item {
+  flex: 1;
+  height: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.before-card-item img,
+.after-card-item img {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.badge-title {
+  z-index: 2;
+  text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8);
+  line-height: 1;
+}
+
+.before-after-container {
+  min-height: 350px;
+}
+
+@media (min-width: 992px) {
+  .before-after-container {
+    min-height: 100%;
+  }
+
+  .before-card-item img,
+  .after-card-item img {
+    height: 100%;
+    min-height: 480px;
+    object-fit: cover;
+  }
+}
+
+/*================================ Brand Section ====================================== */
+
+.brand-section {
+  background-color: #eeeeee;
+}
+
+.brand-logo {
+  max-height: 70px; /* Logos ki ek barabar height ensure karne ke liye */
+  width: auto;
+  object-fit: contain;
+  filter: opacity(0.85); /* Premium look ke liye thoda subtle opacity */
+  transition:
+    filter 0.3s ease,
+    transform 0.3s ease;
+}
+
+/*================================ Testimonial Section =============================== */
+
+.testimonial-section {
+  background-color: rgba(239, 245, 248, 1);
+}
+
+.testimonial-section .sub-tag {
+  color: rgba(108, 188, 69, 1);
+  font-size: 18px;
+}
+
+.testimonial-section-heading {
+  font-size: 57px;
+}
+
+.testimonial-section-heading span {
+  color: rgba(0, 141, 198, 1);
+}
+
+/* ==========================================
+   TESTIMONIAL CARDS STYLING
+   ========================================== */
+
+/* Main Card Body */
+.card-testimonial {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.avatar-circle {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  background-color: #002e4a;
+}
+
+.avatar-text {
+  font-size: 19px;
+}
+
+.user-name {
+  color: rgba(20, 17, 37, 1);
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.user-location {
+  color: rgba(89, 91, 98, 1);
+  font-size: 12px;
+  letter-spacing: -3%;
+}
+
+.card-testimonial-review {
+  background-color: #ffffff;
+  /* border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  border-radius: 10px;
+}
+
+.card-testimonial-review .star-rating i {
+  font-size: 12px;
+}
+
+.card-testimonial-review blockquote {
+  font-size: 16px;
+  color: rgba(127, 127, 121, 1);
+  line-height: 26px;
+}
+
+.card-testimonial-review time {
+  color: rgba(89, 91, 98, 1);
+  font-size: 12px;
+}
+
+.reviews-btn a {
+  background-color: #008cc9; 
+  color: #ffffff !important;
+  font-size: 12px;
+  border-radius: 50px; 
+  border: none;
+  box-shadow: none;
+}
+
+/* Hover Effect */
+.reviews-btn:hover a {
+  background-color: #0077ab;
+}
+
+/*================================ Bottom CTA Section ====================================== */
+
+.bottom-cta-section {
+  background-color: #eeeeee;
+}
+
+.bottom-cta-card-wrapper {
+  background-color: rgba(0, 46, 74, 1);
+  border-radius: 30px;
+}
+
+.bottom-cta-description {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.bottom-cta-section .bottom-cta-tagline {
+  color: rgba(108, 188, 69, 1);
+}
+
+.bottom-cta-section .bottom-cta-heading {
+  font-size: 42px;
+  line-height: 57px;
+}
+
+.bottom-cta-buttons .get-a-quote-btn {
+  font-size: 12px;
+  line-height: 2.5;
+  background-color: rgba(108, 188, 69, 1) !important;
+  border-color: rgba(108, 188, 69, 1) !important;
+  color: #ffffff !important;
+  border-radius: 200px !important;
+}
+
+.bottom-cta-buttons .get-a-quote-btn:hover {
+  background-color: rgb(51, 105, 24) !important;
+  border-color: rgb(51, 105, 24) !important;
+  color: white !important;
+}
+
+.bottom-cta-buttons .call-us-today-btn {
+  font-size: 12px;
+  line-height: 2.5;
+  border: 1px solid rgba(108, 188, 69, 1) !important;
+  border-radius: 200px !important;
+  color: white !important;
+}
+
+.bottom-cta-buttons .call-us-today-btn:hover {
+  background-color: rgb(51, 105, 24) !important;
+  border-color: rgb(51, 105, 24) !important;
+  color: white !important;
+}
+
+/*================================ Contact Section ====================================== */
+.contact-section {
+  background-color: #eeeeee;
+}
+
+.contact-section .sub-tag {
+  color: rgba(108, 188, 69, 1);
+  font-size: 16px;
+}
+
+.contact-section-heading {
+  font-size: 57px;
+}
+.contact-section-heading span {
+  color: rgba(0, 141, 198, 1);
+}
+
+.contact-form {
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid rgba(34, 174, 218, 1);
+}
+
+.contact-label {
+  color: rgba(54, 65, 83, 1);
+  font-size: 16px;
+}
+
+.contact-input {
+  border: 0.8px solid rgba(209, 213, 220, 1);
+  border-radius: 0.8px;
+  /* padding: 10px 14px; */
+  font-size: 14px;
+  color: rgba(10, 10, 10, 0.5);
+}
+
+.contact-input::placeholder {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.contact-input:focus {
+  border: 1px solid #66c043;
+  box-shadow: 0 0 0 3px rgba(102, 192, 67, 0.15) !important;
+}
+
+/* Custom Specificity Fix */
+.contact-form .btn.contact-submit-btn {
+  background-color: #66c043 !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+  border-radius: 500px;
+}
+
+/* ==========================================
+   ADDED: RESPONSIVE RECAPTCHA STYLES
+   ========================================== */
+.captcha-responsive-wrapper {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.captcha-inner {
+  width: 180px;
+  height: 78px;
+}
+
+/* Mobile screen scaling (width <= 360px) */
+@media screen and (max-width: 320px) {
+  .captcha-inner {
+    transform: scale(0.82);
+    -webkit-transform: scale(0.82);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
+}
+
+/* Extra small screen scaling (width <= 300px) */
+@media screen and (max-width: 300px) {
+  .captcha-inner {
+    transform: scale(0.72);
+    -webkit-transform: scale(0.72);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
+}
+
+.contact-form .btn.contact-submit-btn:hover {
+  background-color: #58ab38 !important;
+  color: #ffffff !important;
+}
+
+.contact-form .btn.contact-submit-btn:active {
+  transform: scale(0.99);
+}
+
+.contact-details {
+  border-radius: 30px;
+  background-color: rgba(12, 45, 72, 1);
+  color: white;
+}
+
+.contact-details-heading {
+  font-size: clamp(1.5rem, 1.3571rem + 0.7143vw, 2rem);
+}
+
+.contact-details .info-label {
+  font-size: 16px;
+  color: rgba(105, 187, 65, 1);
+}
+
+.contact-details .info-value {
+  font-size: 16px;
+}
+
+.contact-location {
+  border-radius: 30px;
+  border: 1px solid #58ab38;
+}
+
+/*================================ Contact Section End ================================== */
+
+/*================================ Footer Section ====================================== */
+.footer-section {
+  min-height: 250px; /* Safe minimum height */
+}
+
+.footer-bg-img {
+  z-index: 1; /* Background layer */
+  pointer-events: none; /* Image interaction disable taake content click ho sake */
+}
+
+.footer-section .container {
+  z-index: 2; /* Content layer (Image ke upar) */
+}
+
+.footer-heading {
+  font-size: 18px;
+}
+
+.footer-links li a {
+  color: white;
+  font-size: 14px;
+  transition:
+    color 0.2s ease,
+    text-decoration 0.2s ease;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline !important;
+  color: white;
+}
+
+.footer-contact-list li a {
+  color: white;
+}
+
+.footer-social-media .icon-circle-2 {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  /* background-color: #ffffff; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(228, 228, 228, 1); /* Light subtle border matching Figma */
+  text-decoration: none;
+}
+
+.footer-social-media .icon-circle-2:hover {
+  background-color: #f8f9fa;
+  border-color: #015198;
+}
+
+/* Bottom Footer Strip Background Color */
+.footer-2 {
+  background-color: #008cc9; /* Light blue shade from design */
+}
+
+/* Bottom Links Hover State */
+.footer-bottom-link {
+  font-size: 13px;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.footer-bottom-link:hover {
+  opacity: 1;
+  text-decoration: underline !important;
+}
+/*================================ Footer Section ====================================== */
+
+
+/*================================ About Page  ====================================== */
+
+/* Background Overlay */
+.about-hero-section .about-hero-overlay {
+    background: rgba(0, 29, 54, 0.9);
+    
+}
+
+.about-page .about-hero-section .hero-heading{
+  font-size: clamp(2.5rem, 1.9643rem + 2.6786vw, 4.375rem);
+}
+
+.about-page .about-hero-section .hero-subheading{
+  font-size: clamp(13px, 1.2vw, 16px);
+}
+
+
+/* Green Badge */
+.about-hero-section .about-badge {
+    /* background-color:  !important; */
+    color: white !important;
+    font-size: 13px;
+}
+
+/* Letter Spacing Class */
+/* Paragraph Max-Width */
+.about-hero-section .about-hero-desc {
+    max-width: 650px;
+    font-size: clamp(14px, 1.2vw, 16px);
+}
+
+/* ==========================================
+   OUR PURPOSE SECTION STYLES
+   ========================================== */
+
+.our-purpose-section {
+    background-color: #ffffff;
+}
+
+/* Heading Typography */
+.purpose-title {
+    color: #0d1b2a;
+    font-size: 2.25rem;
+}
+
+.purpose-subtitle {
+    color: #556070 !important;
+    line-height: 1.6;
+    font-size: clamp(13px, 1.2vw, 16px);
+}
+
+/* Card General Styling */
+.purpose-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.purpose-card .card-heading {
+    font-size: 1.75rem;
+}
+
+.purpose-card .card-text {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Mission Card (Light Gray Background) */
+.mission-card {
+    background-color: #ebedef; /* Soft Light Gray */
+}
+
+.mission-card .card-heading {
+    color: #0d1b2a;
+}
+
+.mission-card .card-text {
+    color: #556070 !important;
+}
+
+/* Vision Card (Dark Navy/Green Background) */
+.vision-card {
+    background-color: rgba(0, 46, 74); 
+    color: white !important;
+}
+
+.vision-card .card-text {
+  color: white !important;
+}
+
+
+/* Green Icons Color Fix */
+.purpose-icon i {
+    color: rgb(108, 188, 69) !important; /* Bright green as per UI */
+}
+/*================================ About Page End ====================================== */
+
+
+/*================================ Contact Us Page ====================================== */
+
+.contact-us-hero-section .sub-tag {
+  color: rgba(108, 188, 69, 1);
+  font-size: clamp(1.25rem, 1.0714rem + 0.8929vw, 1.875rem);
+}
+
+.contact-us-hero-section-heading h2{
+  font-size: clamp(1.5625rem, 1.0804rem + 2.4107vw, 3.25rem);
+}
+
+
+.contact-us-section {
+  background-color: #eeeeee;
+}
+
+/* Outer Form Card */
+.contact-form {
+    border-radius: 30px;
+    background-color: #ffffff;
+    border: 1px solid rgba(34, 174, 218, 1);
+}
+
+/* Field Labels */
+.contact-label {
+    color: rgba(54, 65, 83, 1);
+    font-size: 16px;
+}
+
+/* Minimal Input Customization (Keeps Bootstrap Default form-control Look) */
+.contact-input {
+    border-radius: 8px !important; /* Only Border Radius Override */
+}
+
+/* Message Textarea Resizing Disabled */
+textarea.contact-input {
+    resize: none !important;
+}
+
+/* Active Focus Effect */
+.contact-input:focus {
+    border-color: #66c043;
+    box-shadow: 0 0 0 3px rgba(102, 192, 67, 0.15) !important;
+}
+
+/* Submit Button */
+.contact-form .btn.contact-submit-btn {
+    background-color: #66c043 !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    border-radius: 500px;
+}
+
+.contact-form .btn.contact-submit-btn:hover {
+    background-color: #58ab38 !important;
+    color: #ffffff !important;
+}
+
+.contact-form .btn.contact-submit-btn:active {
+    transform: scale(0.99);
+}
+
+/* Responsive reCAPTCHA Styles */
+.captcha-responsive-wrapper {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.captcha-inner {
+    width: 180px;
+    height: 78px;
+}
+
+/* Mobile screen scaling */
+@media screen and (max-width: 320px) {
+    .captcha-inner {
+        transform: scale(0.82);
+        -webkit-transform: scale(0.82);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .captcha-inner {
+        transform: scale(0.72);
+        -webkit-transform: scale(0.72);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+}
+
+/* Right Side: Contact Details Box */
+.contact-us-section .contact-details {
+    border-radius: 24px;
+    background-color: #0c2d48;
+}
+
+.contact-us-section .contact-details-heading {
+    font-size: clamp(1.5rem, 2vw, 1.85rem);
+}
+
+.contact-us-section .contact-details .info-label {
+    font-size: 15px;
+    color: #69bb41;
+}
+
+.contact-us-section .contact-details .info-value {
+    font-size: 15px;
+}
+
+/* Map Container */
+.contact-us-section .contact-location {
+    border-radius: 24px;
+    border: 1px solid #58ab38;
+}
+
+/* Captcha Responsive Wrapper */
+.captcha-responsive-wrapper {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.captcha-inner {
+    width: 100%;
+    max-width: 304px;
+}
+/*================================ Contact Page End ====================================== */
+
+/*================================ Service Page ====================================== */
+.service-hero-section .sub-tag {
+  color: rgba(108, 188, 69, 1);
+  font-size: clamp(1.25rem, 1.0714rem + 0.8929vw, 1.875rem);
+}
+
+.service-section-heading h2{
+  font-size: clamp(1.5625rem, 1.0804rem + 2.4107vw, 3.25rem);
+}
+
+.service-hero-section {
+  background-color: #ffffff;
+}
+
+/* ==========================================
+   SERVICE CARD STYLING
+   ========================================== */
+
+/* .service-card-wrapper {
+    max-width: 360px; 
+} */
+
+.service-card {
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+} */
+
+/* Image Aspect Ratio Container */
+.service-card .card-img-wrapper {
+    height: 200px;
+    width: 100%;
+}
+
+/* Title Styling */
+.service-card .card-title {
+    color: #0b192c;
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+/* Top Right Icon Color */
+.service-card .card-icon i {
+    color: #1e7332 !important; /* Deep Green Icon */
+}
+
+/* Description Text */
+.service-card .card-description {
+    color: #556070;
+    font-size: 0.925rem;
+    line-height: 1.55;
+}
+
+/* Link Styling */
+.service-card .learn-more-link {
+    color: #1e7332 !important; /* Green Accent */
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.service-card .learn-more-link .icon-arrow {
+    transition: transform 0.2s ease;
+    font-size: 0.85rem;
+}
+
+.service-card .learn-more-link:hover .icon-arrow {
+    transform: translateX(4px);
+}
+
+/*================================ Service Page End ====================================== */
+
+/*================================ Review Page ====================================== */
+
+.review-hero-section .review-hero-section-overlay {
+  background: rgba(0, 29, 54, 0.85); /* Slightly tuned opacity for clarity */
+  z-index: 1;
+}
+
+/* Content Container Layer */
+.review-hero-section .review-hero-section-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  z-index: 2; /* Ensures text stays above overlay */
+}
+
+.review-hero-section-content h2{
+  font-size: clamp(1.5625rem, 1.0804rem + 2.4107vw, 3.25rem);
+}
+
+.review-hero-section-content p{
+  font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+}
+
+/* Stats Section Custom Tweaks */
+.stats-section .stat-number {
+    font-size: clamp(2rem, 3.5vw, 2.5rem);
+    line-height: 1.2;
+    color: #0c2d48;
+}
+
+.stats-section .stat-label {
+    font-size: 0.95rem;
+    color: #556070;
+}
+
+/*================================ Review Page End ====================================== */
+.review-testimonials-section{
+  background-color: #eeeeee;
+}
+/* User Header Card */
+.review-card-testimonial {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.avatar-circle {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    background-color: #002e4a;
+}
+
+.avatar-text {
+    font-size: 19px;
+}
+
+.user-name {
+    color: #141125;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.user-location {
+    color: #595b62;
+    font-size: 13px;
+    font-style: normal;
+}
+
+/* Review Body Card */
+.card-testimonial-review {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.card-testimonial-review .star-rating i {
+    font-size: 14px;
+    color: #f79533;
+}
+
+.card-testimonial-review blockquote {
+    font-size: 15px;
+    color: #595b62;
+    line-height: 1.6;
+}
+
+.card-testimonial-review time {
+    color: #8c8e96;
+    font-size: 12px;
+}
+
+.quote-icon img,
+.google-logo img {
+    height: 20px;
+    width: auto;
+}
+
+/* ==========================================
+   FEEDBACK SECTION STYLING
+   ========================================== */
+
+.review-feedback-section {
+    background-color: #f1f4f7;
+}
+
+.section-title {
+    color: #1c232b;
+    font-size: 2rem;
+}
+
+.section-desc {
+    color: #555e68;
+    max-width: 520px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Left Buttons */
+.btn-google {
+  background-color: rgb(0, 141, 198);
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.25rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-google:hover {
+  background-color: rgb(0, 118, 166); /* Darker shade on hover */
+  color: #ffffff;
+}
+.btn-outline-direct {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f8f9fa;
+  border: 1px solid #78828a;
+  color: #2b3036;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-outline-direct:hover {
+  background-color: #e2e6ea;
+  color: #111111;
+}
+
+/* Right Card & Form Inputs */
+.feedback-card {
+    border: 1px solid #e1e6eb;
+}
+
+.feedback-card .form-label {
+    font-size: 0.85rem;
+}
+
+.feedback-card .form-control {
+    border: 1px solid #d1d7dc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.feedback-card .form-control::placeholder {
+    color: #98a2b3;
+}
+
+.feedback-card .form-control:focus {
+    box-shadow: none;
+    border-color: #1e620e;
+}
+/* Star Rating Container */
+.star-rating-select input[type="radio"] {
+    display: none; /* Default radio buttons ko hide karne ke liye */
+}
+
+.star-rating-select label {
+    font-size: 1.25rem;
+    color: #c5cbd3; /* Unselected star color */
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+/* Hover aur Checked State (selected star aur uske peeche wale stars orange honge) */
+.star-rating-select label:hover,
+.star-rating-select label:hover ~ label,
+.star-rating-select input[type="radio"]:checked ~ label {
+    color: #f79533;
+}
+/* Submit Button */
+.review-submit-btn {
+  background-color: #5bbd46;
+  border: none;
+  border-radius: 50px; /* Full pill shape */
+  font-size: 0.95rem;
+  color: #ffffff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.review-submit-btn:hover {
+  background-color: #4ea83b;
+  color: #ffffff;
+}
+
+
+
+/* Service Area */
+
+/* Service Locations Section */
+.service-locations-section {
+    background-color: #f8f9fa;
+}
+
+.map-card-wrapper {
+    min-height: 420px;
+    border-color: #e9ecef !important;
+    border-radius: 16px;
+}
+
+.primary-hubs-badge {
+    max-width: 280px;
+    z-index: 2;
+    border-color: #e2e8f0 !important;
+}
+
+.location-info-card {
+    border-color: #e2e8f0 !important;
+    transition: transform 0.2s ease, shadow 0.2s ease;
+    border-radius: 16px;
+}
+
+
+.location-info-card .icon-box {
+    background-color: #e8f3fc !important;
+}
+
+.location-info-card .icon-box i {
+    color: #015198 !important;
+}
+
+.location-info-card i.fa-circle-check {
+    color: #28a745 !important;
+}
+
+
+/* Inspection Form Section */
+.inspection-card {
+    border-color: #e9ecef !important;
+}
+
+.custom-input {
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0.65rem 0.9rem;
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.custom-input:focus {
+    background-color: #ffffff;
+    border-color: #228b22;
+    box-shadow: 0 0 0 0.25rem rgba(34, 139, 34, 0.15);
+}
+
+.custom-input::placeholder {
+    color: #9ca3af;
+}
+
+/* Form Submit Button Styling matching the design */
+.btn-request-inspection {
+  background-color: #5bbd46;
+  border: none;
+  border-radius: 50px; /* Full pill shape */
+  font-size: 0.95rem;
+  color: #ffffff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+.btn-request-inspection:hover {
+  background-color: #4ea83b;
+  color: #ffffff;
+}
+
+.feature-card {
+    border-color: #e9ecef !important;
+}
+
+
+
+
+.multi-pu-roof-coat-hero-section .multi-pu-roof-coat-bg-overlay {
+  background: rgba(0, 29, 54, 0.9);
+}
+
+
+/* Tech Card */
+.tech-card {
+    border-color: #e9ecef !important;
+}
+
+/* Custom Accordion Styling */
+.custom-accordion .accordion-item {
+    border-color: #e9ecef !important;
+}
+
+.custom-accordion .accordion-button {
+    font-size: 0.95rem;
+}
+
+/* Custom Chevron Icon Color */
+.custom-accordion .accordion-button::after {
+    filter: invert(36%) sepia(85%) saturate(820%) hue-rotate(85deg) brightness(92%) contrast(98%);
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    box-shadow: none !important;
+}
+
+
+/* Execution Protocol Card Styling */
+.protocol-card {
+    border-color: #e9ecef !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* .protocol-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.08) !important;
+} */
+
+/* Step Badge Circle/Square */
+.step-number {
+    width: 36px;
+    height: 36px;
+    background-color: #eaf5eb !important;
+    color: #247c00 !important;
+    font-size: 0.9rem;
+}
+
+/* Assessment Form Section */
+.assessment-form-card {
+    border-color: #e9ecef !important;
+}
+
+/* Contact Icon Circles */
+.icon-circle {
+    background-color: #eaf5eb !important;
+}
+
+.icon-circle i {
+    color: #247c00 !important;
+}
+
+/* Form Inputs */
+.assessment-form-card .form-control {
+    background-color: #f8f9fa !important;
+    border-color: #e5e7eb !important;
+    color: #1f2937;
+    border-radius: 8px;
+}
+
+.assessment-form-card .form-control:focus {
+    background-color: #ffffff !important;
+    border-color: #247c00 !important;
+    box-shadow: 0 0 0 0.25rem rgba(36, 124, 0, 0.15) !important;
+}
+
+/* Green Submit Button */
+.btn-green-submit {
+  background-color: #66c043 !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  border-radius: 500px;
+}
+
+.btn-green-submit:hover {
+  /* Assessment Form Section */
+  .assessment-form-card {
+      border-color: #e9ecef !important;
+  }
+  
+  /* Contact Icon Circles */
+  .icon-circle {
+      background-color: #eaf5eb !important;
+  }
+  
+  .icon-circle i {
+      color: #247c00 !important;
+  }
+  
+  /* Form Inputs */
+  .assessment-form-card .form-control {
+      background-color: #f8f9fa !important;
+      border-color: #e5e7eb !important;
+      color: #1f2937;
+      border-radius: 8px;
+  }
+  
+  .assessment-form-card .form-control:focus {
+      background-color: #ffffff !important;
+      border-color: #247c00 !important;
+      box-shadow: 0 0 0 0.25rem rgba(36, 124, 0, 0.15) !important;
+  }
+  
+  /* Green Submit Button */
+  .btn-green-submit {
+      background-color: #247c00;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn-green-submit:hover {
+      background-color: #1b5e00;
+      color: #ffffff;
+  }
+}
