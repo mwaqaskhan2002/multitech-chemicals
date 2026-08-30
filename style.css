@@ -772,7 +772,7 @@
 
   .before-card-area,
   .after-card-area {
-    min-height: 250px;
+    min-height: 150px;
   }
 }
 
@@ -802,7 +802,7 @@
 
   .before-card-area,
   .after-card-area {
-    min-height: 220px; /* Tablet image height */
+    min-height: 120px; /* Tablet image height */
   }
 }
 
@@ -848,7 +848,7 @@
   border-radius: 12px;
   padding-left: 40px !important;
 
-  min-height: 70px;
+  min-height: 50px;
   height: 100%;
 }
 
@@ -889,7 +889,7 @@
 }
 
 .before-after-container {
-  min-height: 350px;
+  min-height: 250px;
 }
 
 @media (min-width: 992px) {
@@ -1243,12 +1243,12 @@
 }
 
 .contact-details .info-label {
-  font-size: 16px;
+  font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
   color: rgba(105, 187, 65, 1);
 }
 
 .contact-details .info-value {
-  font-size: 16px;
+  font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
 }
 
 .contact-location {
@@ -1308,6 +1308,17 @@
 .footer-social-media .icon-circle-2:hover {
   background-color: #f8f9fa;
   border-color: #015198;
+}
+
+.footer-contact-list .footer-number a, .footer-number i{
+  font-size: 15px;
+}
+.footer-contact-list .footer-email a, .footer-email i{
+  font-size: 15px;
+}
+
+.footer-contact-list .footer-address{
+  font-size: 15px;
 }
 
 /* Bottom Footer Strip Background Color */
