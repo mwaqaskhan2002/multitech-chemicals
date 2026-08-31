@@ -2163,3 +2163,11 @@ textarea.contact-input {
   color: #005197;
   text-decoration: underline !important;
 }
+
+.footer-powered-link {
+  text-decoration: none;
+}
+
+.footer-powered-link:hover {
+  text-decoration: underline !important;
+}
