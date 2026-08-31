@@ -1950,86 +1950,6 @@ textarea.contact-input {
 
 
 
-
-.multi-pu-roof-coat-hero-section .multi-pu-roof-coat-bg-overlay {
-  background: rgba(0, 29, 54, 0.9);
-}
-
-
-/* Tech Card */
-.tech-card {
-    border-color: #e9ecef !important;
-}
-
-/* Custom Accordion Styling */
-.custom-accordion .accordion-item {
-    border-color: #e9ecef !important;
-}
-
-.custom-accordion .accordion-button {
-    font-size: 0.95rem;
-}
-
-/* Custom Chevron Icon Color */
-.custom-accordion .accordion-button::after {
-    filter: invert(36%) sepia(85%) saturate(820%) hue-rotate(85deg) brightness(92%) contrast(98%);
-}
-
-.custom-accordion .accordion-button:not(.collapsed) {
-    background-color: #ffffff !important;
-    color: #111827 !important;
-    box-shadow: none !important;
-}
-
-
-/* Execution Protocol Card Styling */
-.protocol-card {
-    border-color: #e9ecef !important;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-/* .protocol-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.08) !important;
-} */
-
-/* Step Badge Circle/Square */
-.step-number {
-    width: 36px;
-    height: 36px;
-    /* background-color: #eaf5eb !important; */
-    color: #247c00 !important;
-    font-size: 0.9rem;
-}
-
-/* Assessment Form Section */
-.assessment-form-card {
-    border-color: #e9ecef !important;
-}
-
-/* Contact Icon Circles */
-.icon-circle {
-    background-color: #eaf5eb !important;
-}
-
-.icon-circle i {
-    color: #247c00 !important;
-}
-
-/* Form Inputs */
-.assessment-form-card .form-control {
-    background-color: #f8f9fa !important;
-    border-color: #e5e7eb !important;
-    color: #1f2937;
-    border-radius: 8px;
-}
-
-.assessment-form-card .form-control:focus {
-    background-color: #ffffff !important;
-    border-color: #247c00 !important;
-    box-shadow: 0 0 0 0.25rem rgba(36, 124, 0, 0.15) !important;
-}
-
 /* Green Submit Button */
 .btn-green-submit {
   background-color: #66c043 !important;
@@ -2123,57 +2043,73 @@ textarea.contact-input {
 }
 
 
-/*================================ Multi Pu Roof Coat ====================================== */
-/* Flagship Product Pill Badge */
-.flagship-badge {
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.75); /* Thin white outer border */
+/*================================ Products ====================================== */
+
+
+.product-hero-section .product-hero-section-overlay {
+  background: rgba(0, 29, 54, 0.85); /* Slightly tuned opacity for clarity */
+  z-index: 1;
 }
 
-/* Green Check Icon */
-.flagship-badge .check-icon {
-    color: #00a859; /* Bright green color */
-    font-size: 14px;
+/* Content Container Layer */
+.product-hero-section .product-hero-section-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  z-index: 2; /* Ensures text stays above overlay */
 }
 
-/* Green Upper Case Text */
-.flagship-badge .badge-text {
-    color: white;
-    font-size: 12px;
+.product-hero-section-content h2{
+  font-size: clamp(1.5625rem, 1.0804rem + 2.4107vw, 3.25rem);
 }
 
-.multi-pu-roof-coat-hero-section .hero-heading{
-    font-size: clamp(2.5rem, 1.9643rem + 2.6786vw, 4.375rem);
-    line-height: 1.2;
+.product-hero-section-content p{
+  font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
 }
 
-
-/* Hero Section Stats Layout */
-.multi-pu-roof-coat-hero-section .stats-section {
-    padding-top: clamp(1rem, 2vw, 2rem);
-    padding-bottom: clamp(0.5rem, 1.5vw, 1rem);
+.downloads-section{
+  background-color: #EEEEEE;
+}
+/* Table Cell Borders */
+.download-table th,
+.download-table td {
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid #e2e8f0; /* Sirf horizontal line rahegi */
 }
 
-.multi-pu-roof-coat-hero-section .stats-section .stat-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+/* Heading Highlight & Styling */
+.custom-table-header {
+  background-color: #015198 !important; /* Brand green background */
 }
 
-/* Big Green Stat Numbers with clamp() */
-.multi-pu-roof-coat-hero-section .stats-section .stat-number {
-    /* Min: 2rem, Preferred: 4vw, Max: 3.5rem */
-    color: white;
-    font-size: clamp(2rem, 4vw, 3.5rem); 
-    line-height: 1;
-    letter-spacing: -1px;
+.custom-table-header th {
+  background-color: #015198 !important; /* Table header cells background */
+  color: #ffffff !important; /* White text color */
+  font-size: 17px;
 }
 
-/* Light Gray Labels with clamp() */
-.multi-pu-roof-coat-hero-section .stats-section .stat-label {
-    color: #b0c4de;
-    /* Min: 0.75rem, Preferred: 1.2vw, Max: 1rem */
-    font-size: clamp(0.75rem, 1.2vw, 1rem); 
-    line-height: 1.2;
-    margin-top: clamp(2px, 0.5vw, 6px);
+.download-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.2s ease;
+}
+
+.download-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.download-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.download-link {
+  color: #005197; /* Green color match from image */
+}
+
+.download-link:hover {
+  color: #005197;
+  text-decoration: underline !important;
 }

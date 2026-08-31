@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Area - Multitech Chemicals</title>
+    <title>Multi PU Roof - Multitech Chemicals</title>
     <link rel="shortcut icon" href="images/multichemical-favicon.svg" type="image/x-icon" height="50" width="50">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="service-area-page">
+<body class="products-page">
 
     <header class="top-bar py-3">
         <div class="container-lg d-flex align-items-center justify-content-between px-lg-5">
@@ -35,7 +35,7 @@
                     </div>
                     <div class="d-flex flex-column justify-content-around">
                         <h6 class="plus-jakarta-sans-600 m-0">Phone Number</h6>
-                        <a class="rubik-400 text-decoration-none p-0" href="tel:03300110112">0330 011 0112</a>
+                        <a class="rubik-400 text-decoration-none p-0" href="tel:+">07766 065 998</a>
                     </div>
                 </div>
 
@@ -95,23 +95,22 @@
                                         <a class="nav-link" href="/">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="about.html">About Us</a>
+                                        <a class="nav-link" aria-current="page" href="about.html">About Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="services.html">Services</a>
+                                        <a class="nav-link" href="services.html">Services</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="product.html">Products</a>
+                                        <a class="nav-link active" href="product.html">Products</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="service-area.html">Service Areas</a>
+                                        <a class="nav-link" href="service-area.html">Service Areas</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="reviews.html">Reviews</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact-us.html">Contact
-                                            Us</a>
+                                        <a class="nav-link" href="contact-us.html">Contact Us</a>
                                     </li>
                                 </ul>
 
@@ -123,7 +122,8 @@
                                         <div class="d-flex flex-column justify-content-center">
                                             <h6 class="plus-jakarta-sans-600 m-0 text-white fs-6">Phone Number</h6>
                                             <a class="rubik-400 text-white-50 text-decoration-none p-0"
-                                                href="tel:03300110112">0330 011 0112</a>
+                                                href="tel:07766065998">07766
+                                                065 998</a>
                                         </div>
                                     </div>
 
@@ -153,28 +153,34 @@
                     </div>
                 </div>
             </nav>
-
-
-            <!-- Service Area Hero Section -->
-            <section class="service-area-hero-section container-fluid py-5 text-center">
             
-                    <!-- Service Area Contact Section -->
-                    <div class="review-hero-section-content d-flex align-items-center justify-content-center text-center">
+            <section class="product-hero-section container-fluid p-0">
+                <div class="card border-0 rounded-0 overflow-hidden position-relative">
+            
+                    <!-- Background Image -->
+                    <img src="images/review-hero-section.png" class="card-img object-fit-cover" alt="Hero Background"
+                        style="min-height: 350px;">
+            
+                    <!-- Dark Overlay Layer -->
+                    <div class="product-hero-section-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+            
+                    <!-- Content Overlay -->
+                    <div class="product-hero-section-content d-flex align-items-center justify-content-center text-center p-4">
                         <div class="container">
-                            <div class="row justify-content-center py-lg-5">
+                            <div class="row justify-content-center">
                                 <div class="col-12">
             
                                     <!-- Main Heading -->
-                                    <div class="review-section-heading mb-3">
-                                        <h2 class="plus-jakarta-sans-700">
-                                            Nationwide Waterproofing Coverage
+                                    <div class="product-section-heading mb-3">
+                                        <h2 class="plus-jakarta-sans-700 text-white">
+                                            Products & Technical Downloads
                                         </h2>
                                     </div>
             
                                     <!-- Subtitle Paragraph -->
-                                    <p class="inter-400 mx-auto mb-0">
-                                        Multitech Chemicals delivers professional polyurethane coating and industrial waterproofing solutions across major
-                                        cities and industrial zones in Pakistan.
+                                    <p class="inter-400 text-white-50 mx-auto mb-0">
+                                        Access technical data sheets, safety specifications, and application guides for our complete range of
+                                        precision chemical coatings and engineering solutions
                                     </p>
             
                                 </div>
@@ -184,224 +190,291 @@
             
                 </div>
             </section>
+
         </section>
 
-        <!-- Service Areas Map & List Section -->
-        <section class="service-locations-section py-5 bg-light">
-            <div class="container">
-                <div class="row g-4 align-items-stretch">
+        <section class="downloads-section py-5">
+            <div class="container py-lg-5 my-lg-5">
         
-                    <!-- Left Side: Interactive / Image Map Card -->
-                    <div class="col-lg-7 col-12">
-                        <div class="map-card-wrapper p-3 position-relative h-100 border">
-                            <!-- Map Image -->
-                            <img src="images/contact-map.png" alt="Pakistan Operations Map"
-                                class="img-fluid w-100 rounded-3 object-fit-cover h-100">
-        
-                            <!-- Floating Primary Service Hubs Badge -->
-                            <div
-                                class="primary-hubs-badge bg-white p-3 border position-absolute bottom-0 start-0 m-4">
-                                <div class="d-flex align-items-center gap-2 mb-1">
-                                    <i class="fa-solid fa-location-dot text-success"></i>
-                                    <h6 class="mb-0 plus-jakarta-sans-700 text-dark">Primary Service Hubs</h6>
-                                </div>
-                                <p class="mb-0 inter-400 text-muted small">Coverage available nationwide upon request.</p>
-                            </div>
-                        </div>
+                <!-- Technical Downloads Table Card -->
+                <div class="card border border-1 shadow-sm overflow-hidden mt-4">
+                    <div class="table-responsive">
+                        <table class="table download-table align-middle mb-0">
+                            <thead class="custom-table-header">
+                                <tr>
+                                    <th scope="col" class="py-3 px-4 text-uppercase plus-jakarta-sans-700">
+                                        Product Name 
+                                    </th>
+                                    <th scope="col" class="py-3 px-4 text-uppercase plus-jakarta-sans-700 text-end">
+                                        Download Link
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                
+                                <!-- Row 1 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">MultiPrime EP</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/Multi Prime EP - Copy.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 2 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">Multi PU Roof Coat</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/Multi PU Roof Coat  - Copy.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 3 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">Multi Latext 510</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/Multiadd Latex 510 - Copy.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 4 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">Multi Latext 525</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/Multiadd Latex 525 - Copy.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 5 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">Multi SBR 555</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/Multiadd SBR 555 - Copy.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 6 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">MultiBond CTG 703</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/MultiBond CTG 703 - Copy.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 7 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">MultiBond CTS 725</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/MultiBond CTS 725 - Copy.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 8 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">MultiBond CTS 770 Pro</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/MultiBond CTW 770 Pro - Copy.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 9 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">MultiBond CTW 777</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/MultiBond CTW 777 - Copy.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 10 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">Multifloor FC 100</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/Multifloor FC 100 - Copy.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 11 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">Multifloor SL 100</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/MultiFloor SL100 - Copy.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 12 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">MultiGrout 600</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/MultiGrout 600.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 13 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">MultiGrout 610</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/MultiGrout 610.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 14 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">MultiGrout NSG 680</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/MultiGrout NSG 680.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 15 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">MultiGrout CSL 450</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/MultiScreed CSL 450.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 16 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">MultiScreed CWP 2K</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/MultiSeal CWP 2K.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                                <!-- Row 17 -->
+                                <tr>
+                                    <td class="py-3 px-4">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="plus-jakarta-sans-500">Silicone 995</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-3 px-4 text-end">
+                                        <a href="current-product/Silicone 995.pdf" download
+                                            class="download-link plus-jakarta-sans-700 small">
+                                            Download Data
+                                        </a>
+                                    </td>
+                                </tr>
+                
+                            </tbody>
+                        </table>
                     </div>
-        
-                    <!-- Right Side: Info Cards -->
-                    <div class="col-lg-5 col-12 d-flex flex-column gap-4 justify-content-between">
-        
-                        <!-- Card 1: Major Industrial Zones -->
-                        <div class="location-info-card bg-white p-4 border">
-                            <div class="d-flex align-items-center gap-3 mb-3">
-                                <div class="icon-box rounded-circle bg-primary-subtle p-3 d-flex align-items-center justify-content-center"
-                                    style="width: 48px; height: 48px;">
-                                    <i class="fa-solid fa-industry text-primary fs-5"></i>
-                                </div>
-                                <h4 class="plus-jakarta-sans-700 mb-0 text-dark">Major Industrial Zones</h4>
-                            </div>
-        
-                            <ul class="list-unstyled d-flex flex-column p-2 gap-3 mb-0">
-                                <li class="d-flex align-items-start gap-2">
-                                    <i class="fa-solid fa-circle-check text-success fs-6 mt-1"></i>
-                                    <div>
-                                        <h6 class="mb-0 plus-jakarta-sans-700 text-dark">Karachi</h6>
-                                        <p class="mb-0 inter-400 text-muted small">SITE, Korangi Industrial Area, Port Qasim</p>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-start gap-2">
-                                    <i class="fa-solid fa-circle-check text-success fs-6 mt-1"></i>
-                                    <div>
-                                        <h6 class="mb-0 plus-jakarta-sans-700 text-dark">Lahore</h6>
-                                        <p class="mb-0 inter-400 text-muted small">Sundar Industrial Estate, Quaid-e-Azam
-                                            Industrial Park</p>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-start gap-2">
-                                    <i class="fa-solid fa-circle-check text-success fs-6 mt-1"></i>
-                                    <div>
-                                        <h6 class="mb-0 plus-jakarta-sans-700 text-dark">Faisalabad</h6>
-                                        <p class="mb-0 inter-400 text-muted small">Faisalabad Industrial Estate Development &
-                                            Management Company (FIEDMC)</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-        
-                        <!-- Card 2: Commercial Hubs -->
-                        <div class="location-info-card bg-white p-4 border">
-                            <div class="d-flex align-items-center gap-3 mb-3">
-                                <div class="icon-box rounded-circle bg-primary-subtle p-3 d-flex align-items-center justify-content-center"
-                                    style="width: 48px; height: 48px;">
-                                    <i class="fa-solid fa-city text-primary fs-5"></i>
-                                </div>
-                                <h4 class="plus-jakarta-sans-700 mb-0 text-dark">Commercial Hubs</h4>
-                            </div>
-        
-                            <ul class="list-unstyled d-flex flex-column p-2 gap-3 mb-0">
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-solid fa-circle-check text-success fs-6"></i>
-                                    <h6 class="mb-0 plus-jakarta-sans-600 text-dark">Islamabad & Rawalpindi</h6>
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-solid fa-circle-check text-success fs-6"></i>
-                                    <h6 class="mb-0 plus-jakarta-sans-600 text-dark">Multan & South Punjab Region</h6>
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-solid fa-circle-check text-success fs-6"></i>
-                                    <h6 class="mb-0 plus-jakarta-sans-600 text-dark">Peshawar & KPK Commercial Zones</h6>
-                                </li>
-                            </ul>
-                        </div>
-        
-                    </div>
-        
                 </div>
+        
             </div>
         </section>
-
-        <!-- On-Site Inspection Form Section -->
-        <section class="inspection-section py-5 bg-light">
-            <div class="container py-lg-4">
-                <div class="row g-4 align-items-center justify-content-between">
-        
-                    <!-- Left Side Content -->
-                    <div class="col-lg-5 col-12">
-                        <h2 class="plus-jakarta-sans-700 display-6 text-dark mb-3">
-                            Request an On-Site Technical Inspection
-                        </h2>
-                        <p class="inter-400 text-muted mb-4 lead fs-6">
-                            Our engineering team provides comprehensive site evaluations to determine the optimal PU coating
-                            solution for your specific structural requirements. Fill out the form to schedule a visit from our
-                            technical experts.
-                        </p>
-        
-                        <!-- Feature Badges -->
-                        <div class="d-flex flex-column gap-3">
-                            <div class="feature-card bg-white p-3 rounded-3  border d-flex align-items-center gap-3">
-                                <div class="feature-icon rounded-circle bg-opacity-10 p-2 d-flex align-items-center justify-content-center flex-shrink-0"
-                                    style="width: 42px; height: 42px;">
-                                    <i class="fa-solid fa-user-gear fs-5"></i>
-                                </div>
-                                <div>
-                                    <h6 class="plus-jakarta-sans-700 text-dark mb-0 fs-6">Expert Assessment</h6>
-                                    <p class="inter-400 text-muted small mb-0">Thorough analysis of existing substrate
-                                        conditions.</p>
-                                </div>
-                            </div>
-        
-                            <div class="feature-card bg-white p-3 rounded-3  border d-flex align-items-center gap-3">
-                                <div class="feature-icon rounded-circle bg-opacity-10 p-2 d-flex align-items-center justify-content-center flex-shrink-0"
-                                    style="width: 42px; height: 42px;">
-                                    <i class="fa-solid fa-receipt fs-5"></i>
-                                </div>
-                                <div>
-                                    <h6 class="plus-jakarta-sans-700 text-dark mb-0 fs-6">Detailed Quotation</h6>
-                                    <p class="inter-400 text-muted small mb-0">Transparent pricing and precise material
-                                        specifications.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Right Side Form Card -->
-                    <div class="col-lg-6 col-12">
-                        <div class="inspection-card bg-white p-4 p-md-5 rounded-4">
-                            <form>
-                                <div class="row g-3">
-                                    <!-- First Name & Last Name -->
-                                    <div class="col-md-6 col-12">
-                                        <label for="firstName" class="form-label plus-jakarta-sans-500 text-dark small">First
-                                            Name</label>
-                                        <input type="text" class="form-control custom-input" id="firstName" placeholder="John">
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <label for="lastName" class="form-label plus-jakarta-sans-500 text-dark small">Last
-                                            Name</label>
-                                        <input type="text" class="form-control custom-input" id="lastName" placeholder="Doe">
-                                    </div>
-        
-                                    <!-- Company / Organization -->
-                                    <div class="col-12">
-                                        <label for="companyName"
-                                            class="form-label plus-jakarta-sans-500 text-dark small">Company /
-                                            Organization</label>
-                                        <input type="text" class="form-control custom-input" id="companyName"
-                                            placeholder="Your Company Ltd.">
-                                    </div>
-        
-                                    <!-- Phone Number & Project City -->
-                                    <div class="col-md-6 col-12">
-                                        <label for="phoneNumber" class="form-label plus-jakarta-sans-500 text-dark small">Phone
-                                            Number</label>
-                                        <input type="tel" class="form-control custom-input" id="phoneNumber"
-                                            placeholder="+92 300 1234567">
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <label for="projectCity"
-                                            class="form-label plus-jakarta-sans-500 text-dark small">Project City</label>
-                                        <select class="form-select custom-input" id="projectCity">
-                                            <option selected disabled>Select a city</option>
-                                            <option value="karachi">Karachi</option>
-                                            <option value="lahore">Lahore</option>
-                                            <option value="islamabad">Islamabad</option>
-                                            <option value="faisalabad">Faisalabad</option>
-                                            <option value="multan">Multan</option>
-                                            <option value="peshawar">Peshawar</option>
-                                            <option value="other">Other</option>
-                                        </select>
-                                    </div>
-        
-                                    <!-- Project Details -->
-                                    <div class="col-12">
-                                        <label for="projectDetails"
-                                            class="form-label plus-jakarta-sans-500 text-dark small">Project Details</label>
-                                        <textarea class="form-control custom-input" id="projectDetails" rows="4"
-                                            placeholder="Briefly describe the area to be waterproofed (e.g., Industrial roof, 5000 sq ft)"
-                                            style="resize: none;"></textarea>
-                                    </div>
-
-                                    <div class="form-group mb-3 captcha-responsive-wrapper">
-                                        <div class="g-recaptcha captcha-inner" data-sitekey="6LdV-4MtAAAAABz7UJ-ha5dfRq0Mo2nGrB29glNk"></div>  
-                                    </div>
-        
-                                    <!-- Submit Button -->
-                                    <div class="col-12 mt-4">
-                                        <button type="submit"
-                                            class="btn-request-inspection w-100 py-3 poppins-600 d-flex align-items-center justify-content-center gap-2">
-                                            <span>Request Inspection</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-        
-                </div>
-            </div>
-        </section>
+       
         
     </main>
 
@@ -449,7 +522,7 @@
                             <a href="#" class="footer-link text-decoration-none inter-500">Our Process</a>
                         </li>
                         <li>
-                            <a href="service-area.html" class="footer-link text-decoration-none inter-500">Service Areas</a>
+                            <a href="#" class="footer-link text-decoration-none inter-500">Service Areas</a>
                         </li>
                         <li>
                             <a href="reviews.html" class="footer-link text-decoration-none inter-500">Reviews</a>
@@ -500,7 +573,7 @@
                                     <img src="images/footer-call.svg" alt="Call" class="img-fluid">
                                 </i>
                             </div>
-                            <a href="tel:03300110112" class="footer-link inter-500 text-decoration-none">
+                            <a href="tel:0330 011 0112" class="footer-link inter-500 text-decoration-none">
                                 0330 011 0112
                             </a>
                         </li>
@@ -572,6 +645,7 @@
             </div>
         </div>
     </footer>
+
     <a href="https://api.whatsapp.com/send/?phone=923300110112&type=phone_number&app_absent=0" target="_blank"
         rel="noopener noreferrer" class="whatsapp-float shadow" aria-label="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
