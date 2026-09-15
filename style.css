@@ -706,8 +706,8 @@
 }
 
 .working-section-cards-wrapper .card-text {
-  font-size: 13px;
-  /* letter-spacing: -0.04em; */
+  font-size: 14px;
+  letter-spacing: -3%;
   color: rgba(127, 127, 121, 1) !important;
 }
 

@@ -188,7 +188,7 @@
                             <!-- Name Field -->
                             <div class="mb-3">
                                 <label for="fullName" class="form-label contact-label plus-jakarta-sans-500">
-                                    Name
+                                    Name <span class="text-danger">*</span>
                                 </label>
                                 <input type="text" id="fullName" class="form-control contact-input inter-400"
                                     placeholder="Your name" required>
@@ -197,7 +197,7 @@
                             <!-- Email Field -->
                             <div class="mb-3">
                                 <label for="emailAddress" class="form-label contact-label plus-jakarta-sans-500">
-                                    Email
+                                    Email <span class="text-danger">*</span>
                                 </label>
                                 <input type="email" id="emailAddress" class="form-control contact-input inter-400"
                                     placeholder="your@email.com" required>
@@ -206,16 +206,16 @@
                             <!-- Phone Field -->
                             <div class="mb-3">
                                 <label for="phoneNumber" class="form-label contact-label plus-jakarta-sans-500">
-                                    Phone
+                                    Phone <span class="text-danger">*</span>
                                 </label>
                                 <input type="tel" id="phoneNumber" class="form-control contact-input inter-400"
-                                    placeholder="Your phone number">
+                                    placeholder="Your phone number" required>
                             </div>
         
                             <!-- Message Field -->
                             <div class="mb-4 flex-grow-1 d-flex flex-column">
                                 <label for="messageText" class="form-label contact-label plus-jakarta-sans-500">
-                                    Message
+                                    Message <span class="text-danger">*</span>
                                 </label>
                                 <textarea id="messageText" class="form-control contact-input inter-400 flex-grow-1" rows="4"
                                     placeholder="Tell us about your requirements..." required></textarea>
