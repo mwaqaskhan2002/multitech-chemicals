@@ -1302,6 +1302,10 @@
   font-size: 18px;
 }
 
+.footer-section .footer-text{
+  font-size: clamp(0.75rem, 0.6964rem + 0.2679vw, 0.9375rem);
+}
+
 .footer-links li a {
   color: white;
   font-size: 14px;
@@ -1337,14 +1341,14 @@
 }
 
 .footer-contact-list .footer-number a, .footer-number i{
-  font-size: 15px;
+  font-size: 14px;
 }
 .footer-contact-list .footer-email a, .footer-email i{
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .footer-contact-list .footer-address{
-  font-size: 15px;
+  font-size: 14px;
 }
 
 /* Bottom Footer Strip Background Color */
