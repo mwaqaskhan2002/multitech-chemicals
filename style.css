@@ -413,7 +413,7 @@
 }
 
 .dark-card p {
-  font-size: 14px;
+  font-size: 13px;
   /* line-height: 26px; */
   color: #ffffff;
 }
@@ -942,9 +942,13 @@
   width: auto;
   object-fit: contain;
   filter: opacity(0.85); /* Premium look ke liye thoda subtle opacity */
-  transition:
-    filter 0.3s ease,
-    transform 0.3s ease;
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 992px) {
+  .brand-logo {
+    max-height: 55px; /* Logos ki ek barabar height ensure karne ke liye */
+  }
 }
 
 /*================================ Testimonial Section =============================== */
